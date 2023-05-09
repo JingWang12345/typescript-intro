@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ITodo } from 'src/app/model/i-todo';
 import { Todo } from 'src/app/model/todo';
 import { DataService } from 'src/app/services/data/data.service';
 import { UtiltyService } from 'src/app/services/utility/utilty.service';
@@ -11,7 +12,7 @@ import { UtiltyService } from 'src/app/services/utility/utilty.service';
 export class TodoListComponent {
 
 
-  todoArray: Todo[] = []
+  todoArray: ITodo[] = []
 
   constructor(private utilityService: UtiltyService, private dataS: DataService){
     // const todo1 = new Todo('comprare il pane', false);
